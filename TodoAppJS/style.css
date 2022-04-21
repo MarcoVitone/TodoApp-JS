@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+    border: 1px solid #5b58f0;
+    border-radius: 8px;
+    width: 80%;
+    height: 80vh;
+    box-shadow: 0px 1px 11px 5px #5b58f0;
+}
+
+.input{
+    width: 80%;
+    height: 30%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    font-size: 30px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #6f6de7;
+    color: #6f6de7;
+}
+
+input::placeholder{
+    color: #6f6de7;
+    opacity: 0.7;
+}
+
+input:hover{
+    background-color: #6f6de742;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+button {
+ position: relative;
+ display: inline-block;
+ margin: 15px;
+ padding: 15px 30px;
+ text-align: center;
+ font-size: 18px;
+ letter-spacing: 1px;
+ text-decoration: none;
+ color: #5b58f0;
+ background: transparent;
+ cursor: pointer;
+ transition: ease-out 0.5s;
+ border-radius: 30px;
+ border: 2px solid #5b58f0;
+ border-radius: 10px;
+ box-shadow: inset 0 0 0 0 #5b58f0;
+}
+
+button:hover {
+ color: white;
+ box-shadow: inset 0 -100px 0 0 #5b58f0;
+}
+
+button:active {
+ transform: scale(0.9);
+}
+
+.todoList{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h1{
+    color: #5b58f0;
+}
+
+ul{
+    list-style: none;
+    width: 80%;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 1em;
+} 
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#6f6de7, #8e8cf3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#5b58f0, #6c6af1); 
+}
+
+
+li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    color: #5b58f0;
+    border-bottom: 1px solid #6f6de7a9;
+    margin-bottom: 15px;
+}
+
+a{
+    cursor: pointer; 
+    margin-right: 20px;
+}
+
+a h3{
+    font-size: 25px;
+    color: #d40808;
+}
